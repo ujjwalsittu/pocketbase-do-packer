@@ -2,7 +2,7 @@
 export DEBIAN_FRONTEND=noninteractive
 
 echo "***********************************"
-echo "Setup Instance pocketbase_${PB_VERSION}"
+echo "Setup Instance pocketbase_0.20.5"
 echo "***********************************"
 
 # update system
@@ -18,8 +18,8 @@ echo "***********************************"
 
 # Install Pocketbase
 mkdir /opt/pocketbase && cd /opt/pocketbase
-wget https://github.com/pocketbase/pocketbase/releases/download/v${PB_VERSION}/pocketbase_${PB_VERSION}_linux_amd64.zip
-unzip pocketbase_${PB_VERSION}_linux_amd64.zip
+wget https://github.com/pocketbase/pocketbase/releases/download/v20.5/pocketbase_20.5_linux_amd64.zip
+unzip pocketbase_20.5_linux_amd64.zip
 
 echo "***********************************"
 echo "Install Caddy"
